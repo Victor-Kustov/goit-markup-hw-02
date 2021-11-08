@@ -1,4 +1,8 @@
 :root {
+  --main-logo-color: #2196f3;
+  --second-logo-color: #000000;
+  --third-logo-color: #ffffff;
+
   --main-title-color: #212121;
   --second-title-color: #ffffff;
   --main-text-color: #757575;
@@ -7,15 +11,18 @@
 
   --main-button-color: #212121;
   --second-button-color: #ffffff;
+  --bg-button-color-hover: #2196f3;
 
   --main-header-color: #212121;
   --second-header-color: #757575;
   --header-hover-color: #2196f3;
+
+  --hero-bg-color: #2f303a;
+  --footer-bg-color: #2f303a;
 }
 
 body {
   font-family: Roboto, sans-serif;
-  font-weight: 400;
   color: var(--main-text-color);
 }
 
@@ -28,7 +35,7 @@ body {
 }
 
 .footer {
-  background-color: #555555;
+  background-color: var(--footer-bg-color);
 }
 
 /* -----------------HEADER--------------- */
@@ -38,49 +45,41 @@ body {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1, 19;
+  line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--main-logo-color);
 }
 
 .header-logo-color {
-  color: #000;
+  color: var(--second-logo-color);
 }
 
 .footer-logo-color {
-  color: #ffffff;
+  color: var(--third-logo-color);
 }
 
 .header-link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--main-header-colormain-header-color);
+  color: var(--main-header-color);
 }
 
-.header-mail {
+.address-mailб .address-tel {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1, 14;
-  letter-spacing: 0.02em;
-  color: var(--second-header-color);
-}
-
-.header-tel {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-header-color);
 }
 
 .header-link:hover,
 .header-link:focus,
-.header-mail:hover,
-.header-mail:focus,
-.header-tel:hover,
-.header-tel:focus,
+.address-mail:hover,
+.address-mail:focus,
+.address-tel:hover,
+.address-tel:focus,
 .footer-adress:hover,
 .footer-adress:focus,
 .footer-mail:hover,
@@ -96,18 +95,18 @@ body {
 .hero-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 1, 36;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--second-title-color);
-  background-color: #555;
+  background-color: var(--hero-bg-color);
 }
 
 .hero-button {
   font-family: inherit;
   color: var(--second-button-color);
-  background-color: #555;
+  background-color: var(--footer-bg-color);
   cursor: pointer;
 }
 
@@ -116,7 +115,7 @@ body {
 .benefits-list-title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-title-color);
@@ -124,7 +123,7 @@ body {
 
 .benefits-text {
   font-size: 14px;
-  line-height: 1, 71;
+  line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
@@ -133,7 +132,7 @@ body {
 .business-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1, 17;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
@@ -144,7 +143,7 @@ body {
 .team-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1, 17;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
@@ -153,7 +152,7 @@ body {
 .team-list-title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1, 19;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
@@ -161,28 +160,28 @@ body {
 
 .team-text {
   font-size: 16px;
-  line-height: 1, 19px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
 /* --------------FOOTER---------------- */
 
-.footer-adress {
+address {
   font-style: normal;
-  font-weight: 400;
+}
+
+.footer-address {
   font-size: 14px;
-  line-height: 1, 71;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
 
 .footer-mail,
 .footer-tel {
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
-  line-height: 21, 71;
+  line-height: 21.71;
   letter-spacing: 0.03em;
   color: var(--third-text-color);
 }
@@ -198,9 +197,17 @@ body {
 .filter-button:hover,
 .filter-button:focus {
   color: var(--second-button-color);
+  background-color: var(--bg-button-color-hover);
 }
 
 /* --------------portfolio-------------- */
+
+/* Классы для невидимых заголовков
+.portfolio-hidden-titleб
+.benefits-title {
+
+} 
+*/
 
 .portfolio-link {
   color: inherit;
@@ -215,8 +222,7 @@ body {
 }
 
 .portfolio-text {
-  font-weight: normal;
   font-size: 16px;
-  line-height: 1, 87;
+  line-height: 1.87;
   letter-spacing: 0.03em;
 }
