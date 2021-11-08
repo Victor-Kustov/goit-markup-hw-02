@@ -66,7 +66,8 @@ body {
   color: var(--main-header-color);
 }
 
-.address-mailб .address-tel {
+.address-mail,
+.address-tel {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -80,8 +81,8 @@ body {
 .address-mail:focus,
 .address-tel:hover,
 .address-tel:focus,
-.footer-adress:hover,
-.footer-adress:focus,
+.footer-address:hover,
+.footer-address:focus,
 .footer-mail:hover,
 .footer-mail:focus,
 .footer-tel:hover,
@@ -169,10 +170,10 @@ body {
 
 address {
   font-style: normal;
+  font-style: 14px;
 }
 
 .footer-address {
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
@@ -180,8 +181,7 @@ address {
 
 .footer-mail,
 .footer-tel {
-  font-size: 14px;
-  line-height: 21.71;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--third-text-color);
 }
